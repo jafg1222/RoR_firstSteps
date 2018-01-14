@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'application#hello' ##this change the routing for the controller_name#funciont
+  resources :microposts
+  resources :users
+  root 'users#index' ##this change the routing for the controller_name#funciont
 end
